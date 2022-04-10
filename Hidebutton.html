@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .Hbutton{
+            height: 50px;
+            width: 200px;
+            border-radius: 22px;
+            background-color: aqua;
+            color:black;
+            position: relative;
+            top: 40px;
+            bottom: 40px;
+            margin-left: 40px;
+            
+        }
+        .Hbutton1{
+            height: 50px;
+            width: 200px;
+            border-radius: 22px;
+            background-color: aqua;
+            color:black;
+            position: relative;
+            top: 40px;
+            bottom: 40px;
+            margin-left: 40px;
+            
+        }
+        .Hbutton:hover{
+            border: 5px solid green;
+            background-color: antiquewhite;
+            color: black;
+            font-size: 22px;
+            font-weight: bolder;
+        }
+        .Hbutton1:hover{
+            border: 5px solid green;
+            background-color: antiquewhite;
+            color: black;
+            font-size: 22px;
+            font-weight: bolder;
+        }
+        .hide{
+            display: none;
+        }
+
+    </style>
+    <script >
+        function hideB(){
+
+let selectingButton =document.querySelector(".Hbutton1");
+
+selectingButton.classList.add("hide");
+
+        }
+    </script>
+</head>
+<body>
+    <div class="Hidebutton">
+        <button class="Hbutton1"onclick="hideB()" >clickme</button>
+        <button class="Hbutton" >cickme</button>
+    </div>
+</body>
+</html>
